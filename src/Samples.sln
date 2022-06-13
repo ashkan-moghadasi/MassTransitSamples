@@ -5,15 +5,19 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InMemory", "InMemory", "{DEFDDC3E-FBDF-4315-AAC5-F045307D1113}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService1", "InMemory\WorkerService1\WorkerService1.csproj", "{D9413FD2-7959-4D76-98EF-82B267AD68F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerService1", "InMemory\WorkerService1\WorkerService1.csproj", "{D9413FD2-7959-4D76-98EF-82B267AD68F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMq", "RabbitMq", "{6A4C1418-12B4-48DA-BF32-67FCA6702719}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "RabbitMq\EventBus.Messages\EventBus.Messages.csproj", "{6DE30DCB-D38A-4996-9D57-F79B25A830D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderWebApi", "RabbitMq\OrderWebApi\OrderWebApi.csproj", "{340412AA-A4AE-467E-9049-BD3DF591B1C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderWebApi", "RabbitMq\OrderWebApi\OrderWebApi.csproj", "{340412AA-A4AE-467E-9049-BD3DF591B1C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumer", "RabbitMq\Consumer\Consumer.csproj", "{E057F891-3CA7-4256-A22B-158844B8C97B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumer", "RabbitMq\Consumer\Consumer.csproj", "{E057F891-3CA7-4256-A22B-158844B8C97B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ2", "RabbitMQ2", "{453F245A-D492-492F-B950-CCA161BEB04E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GettingStarted", "RabbitMQ2\GettingStarted\GettingStarted.csproj", "{819B9C55-FF72-4551-8E1E-C5BCE25C5BAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{E057F891-3CA7-4256-A22B-158844B8C97B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E057F891-3CA7-4256-A22B-158844B8C97B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E057F891-3CA7-4256-A22B-158844B8C97B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{819B9C55-FF72-4551-8E1E-C5BCE25C5BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{819B9C55-FF72-4551-8E1E-C5BCE25C5BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{819B9C55-FF72-4551-8E1E-C5BCE25C5BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{819B9C55-FF72-4551-8E1E-C5BCE25C5BAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{6DE30DCB-D38A-4996-9D57-F79B25A830D3} = {6A4C1418-12B4-48DA-BF32-67FCA6702719}
 		{340412AA-A4AE-467E-9049-BD3DF591B1C6} = {6A4C1418-12B4-48DA-BF32-67FCA6702719}
 		{E057F891-3CA7-4256-A22B-158844B8C97B} = {6A4C1418-12B4-48DA-BF32-67FCA6702719}
+		{819B9C55-FF72-4551-8E1E-C5BCE25C5BAB} = {453F245A-D492-492F-B950-CCA161BEB04E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C00CF2E8-30C5-4D4E-A6A6-20B5CB2E0BF7}
