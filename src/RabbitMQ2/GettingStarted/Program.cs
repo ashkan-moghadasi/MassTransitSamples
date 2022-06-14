@@ -25,7 +25,7 @@ namespace GettingStarted
                     {
                         //نام گذاری پیش فرض به صورت پاسکال کیس و بر اساس نام کلاس مصرف کننده است
                         //x.SetKebabCaseEndpointNameFormatter();
-                        
+
                         // By default, sagas are in-memory, but should be changed to a durable
                         // saga repository.
                         x.SetInMemorySagaRepositoryProvider();
