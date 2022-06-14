@@ -7,11 +7,11 @@ using Microsoft.Extensions.Hosting;
 
 namespace GettingStarted
 {
-    public class Worker : BackgroundService
+    public class PublishWorker : BackgroundService
     {
         private IBus bus;
 
-        public Worker(IBus bus)
+        public PublishWorker(IBus bus)
         {
             this.bus = bus;
         }
@@ -20,9 +20,12 @@ namespace GettingStarted
         {
             while (!stoppingToken.IsCancellationRequested)
             {
+                
+                await bus.Send(new HelloMessage() {Id = NewId.NextGuid()}, stoppingToken);
                 await bus.Publish(new HelloMessage()
                 {
-                    Id = InVar.Id,
+                    //Id = InVar.Id,
+                    Id=NewId.NextGuid(),
                     Name = "Hello World !"
                 } 
                     //Set Unique Correlation Id
