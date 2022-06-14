@@ -20,8 +20,6 @@ namespace GettingStarted
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                
-                await bus.Send(new HelloMessage() {Id = NewId.NextGuid()}, stoppingToken);
                 await bus.Publish(new HelloMessage()
                 {
                     //Id = InVar.Id,
